@@ -41,8 +41,8 @@ export const register = async (req, res) => {
     const mailOptions = {
       from: process.env.SENDER_EMAIL,
       to: email,
-      subject: "Welcome To HK Auth",
-      text: `Welcome to  my auth. Your Account has been created with email: ${email}`,
+      subject: "Welcome To Hardik Auth",
+      text: `Welcome to Hardik Auth. Your Account has been created with email: ${email}`,
     };
 
     try {

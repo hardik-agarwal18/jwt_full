@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import "dotenv/config";
 import cookieParser from "cookie-parser";
+import morgan from "morgan";
 import connectDatabase from "./config/connectDb.js";
 import authRouter from "./routes/authRoutes.js";
 import userRouter from "./routes/userRoutes.js";
@@ -37,6 +38,7 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization", "Cookie"],
   })
 );
+app.use(morgan("dev"));
 
 //Api Endpoints
 app.get("/", (req, res) => {
