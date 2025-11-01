@@ -15,7 +15,7 @@ connectDatabase();
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:3000",
-  "https://chat.hardik-agarwal18.xyz",
+  "https://auth.hardik-agarwal18.xyz",
   process.env.FRONTEND_URL,
 ].filter(Boolean);
 
